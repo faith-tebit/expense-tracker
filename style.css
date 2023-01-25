@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.expense-tracker{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size:17px;
+    font-weight:bold;
+}
+
+
+h1{
+  padding: 20px;
+}
+
+h3{
+    color: rgb(12, 146, 12);
+    text-align: center;
+    padding-bottom:20px;
+}
+
+input{
+    padding:10px;
+    border-radius:10px;
+    border: 1px solid rgb(170, 166, 166);
+}
+
+
+.content-box{
+    max-width:700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-inline: auto;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+span{
+    height:10px;
+    font-size: 12px;
+    color: red;
+}
+
+#btn{
+    width:95%;
+    align-self: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 0px 50px 10px;
+    background-color:rgb(70, 165, 70);
+    border: none;
+    color: white;
+    box-shadow: 4px 10px 10px grey;
+}
+
+
+.container{
+    width: 400px;
+    max-width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: auto;
+    background-color: rgb(230, 225, 225);
+    border-radius: 10px;
+    margin-bottom:10px;
+    font-size: 12px;
+    padding: 10px;
+}
+
+
+.del-btn{
+    cursor: pointer;
+    color: rgb(148, 10, 10);
+    font-size:25px;
+    font-weight:bold;
+}
+
+@media all and (max-width: 799px){
+    .content-box .content{
+        width: 100%;
+    }
+}
